@@ -5,7 +5,7 @@ export class Greeter {
   }
 }
 
-export declare interface SSSWindow extends Window {
+export interface SSSWindow extends Window {
   SSS: {
     activeName: string
     activeAddress: string
@@ -22,7 +22,7 @@ export declare interface SSSWindow extends Window {
   isAllowedSSS: () => boolean
 }
 
-declare const window: SSSWindow
+export declare const window: SSSWindow
 
 export const getActiveAccountToken = (
   verifierPublicKey: string | PublicAccount,
