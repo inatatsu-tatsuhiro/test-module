@@ -20,3 +20,19 @@ export interface SSSWindow extends Window {
   }
   isAllowedSSS: () => boolean
 }
+
+declare const window: SSSWindow
+
+export const getActiveAccountToken = (
+  verifierPublicKey: string,
+  customPayload?: Object,
+  encriptedPayload?: string
+): Promise<string> => {
+  return window.SSS.getActiveAccountToken(
+    verifierPublicKey,
+    customPayload,
+    encriptedPayload
+  )
+}
+
+export const getActiveAddress = () => window.SSS.activeAddress
