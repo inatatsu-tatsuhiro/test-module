@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "inatatsu <inatatsu.0906@gmail.com> (http://www.inatatsu.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "inatatsu-test-module": "^1.0.0"
+  }
+}
